@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KAILEL Family Website - Unity, Love, and Prosperity">
+  <meta name="description" content="KAILEL Family - Unity, Love, and Prosperity">
   <title>KAILEL Family</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -12,90 +12,62 @@
   <!-- Header Section -->
   <header>
     <div class="container">
-      <h1>Welcome to the KAILEL's Family</h1>
+      <h1>Welcome to the KAILEL Family</h1>
       <p>Unity, Love, and Prosperity</p>
     </div>
   </header>
 
-  <!-- About Us Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>The KAILEL family has a rich history of unity and support.<br> We believe in the power of love, togetherness, and shared values.<br> From our roots in Embu, Kenya, we have grown stronger with each passing year.</p>
-      <p><strong>Our Motto:</strong> Unity, Love, and Prosperity</p>
-      <p><strong>Our Mission:</strong> To uphold family values of respect, support, and love while empowering each member to thrive in all aspects of life.</p>
-      <p><strong>Our Vision:</strong> A family united by love, growing together, and creating a legacy of success and harmony for future generations.</p>
-    </div>
-  </section>
-
   <!-- Family Member Details Section -->
   <section id="family-members">
     <div class="container">
-      <h2>Family Members</h2>
-      <h3>Parents</h3>
-      <ul>
-        <li>Father:  [fathers's Name]</li>
-        <li>Mother: [Mother's Name]</li>
-      </ul>
+      <h2>Family Member Details</h2>
+      <p>Please fill in the details of your family members below:</p>
+      <form id="familyForm">
+        <h3>Parents</h3>
 
-      <h3>Children</h3>
-      <ul><br>
-        <li>John - Son</li><br>
-        <li>Mary - Daughter</li><br>
-        <li>[Child Name] - [Relationship]</li><br>
-      </ul>
+        <!-- Father -->
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required placeholder="Enter Father's Name">
 
-      <h3>Grandchildren</h3>
-      <ul>
-        <li>Peter - Grandson</li><br>
-        <li>Anna - Granddaughter</li><br>
-        <li>[Grandchild Name] - [Relationship]</li><br>
-      </ul>
-    </div>
-  </section>
+        <!-- Mother -->
+        <label for="motherName">Mother's Name:</label>
+        <input type="text" id="motherName" name="motherName" required placeholder="Enter Mother's Name">
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <div class="container">
-      <h2>Family Gallery</h2>
-      <p>Here are some of our most treasured family moments!</p>
-      <div class="images">
-        <img src="family-photo1.jpg" alt="Family Photo 1">
-        <img src="family-photo2.jpg" alt="Family Photo 2">
-      </div>
-    </div>
-  </section>
+        <h3>Children</h3>
 
-  <!-- Family Events Section -->
-  <section id="events">
-    <div class="container">
-      <h2>Upcoming Family Events</h2><br>
-      <p>Stay informed about our next family gathering, reunion, or celebration!</p><br>
-      <ul>
-        <li><strong>Annual Family Reunion</strong> - Date: [Date], Location: [Location]</li><br>
-        <li><strong>Family Picnic</strong> - Date: [Date], Location: [Location]</li><br>
-      </ul>
-    </div>
-  </section>
+        <!-- Child 1 --><br>
+        <label for="childName1">Child Name 1:</label>
+        <input type="text" id="childName1" name="childName1" placeholder="Enter Child Name">
+        <label for="relationship1">Relationship (e.g., Son, Daughter):</label>
+        <input type="text" id="relationship1" name="relationship1" placeholder="Enter Relationship">
 
-  <!-- Contact Us Section --><br>
-  <section id="contact"><br>
-    <div class="container"><br>
-      <h2>Contact Us</h2>
-      <form id="contactForm"><br>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <!-- Child 2 --><br>
+        <label for="childName2">Child Name 2:</label>
+        <input type="text" id="childName2" name="childName2" placeholder="Enter Child Name">
+        <label for="relationship2">Relationship (e.g., Son, Daughter):</label>
+        <input type="text" id="relationship2" name="relationship2" placeholder="Enter Relationship">
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required<br>
+        <!-- Additional children can be added if needed -->
+        
+        <h3>Grandchildren</h3>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <!-- Grandchild 1 --><br>
+        <label for="grandchildName1">Grandchild Name 1:</label>
+        <input type="text" id="grandchildName1" name="grandchildName1" placeholder="Enter Grandchild Name">
+        <label for="grandchildRelationship1">Relationship (e.g., Grandson, Granddaughter):</label>
+        <input type="text" id="grandchildRelationship1" name="grandchildRelationship1" placeholder="Enter Relationship">
 
-        <button type="submit">Send</button><br>
+        <!-- Grandchild 2 --><br>
+        <label for="grandchildName2">Grandchild Name 2:</label>
+        <input type="text" id="grandchildName2" name="grandchildName2" placeholder="Enter Grandchild Name">
+        <label for="grandchildRelationship2">Relationship (e.g., Grandson, Granddaughter):</label>
+        <input type="text" id="grandchildRelationship2" name="grandchildRelationship2" placeholder="Enter Relationship"><br>
+
+        <!-- Additional grandchildren can be added if needed -->
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Family Member Details</button>
       </form>
-      <p>Email: <a href="mailto:kailelkiprotich4@gmail.com">kailelkiprotich4@gmail.com</a></p><br>
-      <p>Phone: <a href="tel:+254705636703">0705636703</a></p><br>
     </div>
   </section>
 
@@ -105,5 +77,6 @@
       <p>&copy; 2024 KAILEL Family. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
