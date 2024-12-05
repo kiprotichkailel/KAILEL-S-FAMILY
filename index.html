@@ -6,15 +6,36 @@
   <meta name="description" content="KAILEL Family - Unity, Love, and Prosperity">
   <title>KAILEL Family</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Welcome to the KAILEL Family</h1>
+      <p>Unity, Love, and Prosperity</p>
+      <a href="#about" class="cta-button">Learn More About Us</a>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>The KAILEL family has a rich history of unity and support. <br><br>We believe in the power of love, togetherness, and shared values.<br> From our roots in Embu, Kenya, we have grown stronger with each passing year.</p>
+      <p><strong>Our Motto:</strong> Unity, Love, and Prosperity</p>
+      <p><strong>Our Mission:</strong> To uphold family values of respect, support, and love while empowering each member to thrive in all aspects of life.</p>
+      <p><strong>Our Vision:</strong> A family united by love, growing together, and creating a legacy of success and harmony for future generations.</p>
+    </div>
+  </section>
+
   <!-- Family Member Details Section -->
   <section id="family-members">
     <div class="container">
-      <h2>Family Member Details</h2>
+      <h1>Family Member Details</h1>
       <p>Please fill in the details of your family members below:</p>
       <form id="familyForm">
-        <h3>Parents</h3>
+        <h1>Parents</h1>
 
         <!-- Father -->
         <label for="fatherName">Father's Name:</label>
@@ -24,54 +45,56 @@
         <label for="motherName">Mother's Name:</label>
         <input type="text" id="motherName" name="motherName" required placeholder="Enter Mother's Name">
 
-        <h3>Children</h3><br>
+        <h1>Children</h1>
 
-        <!-- Children Fields --><br>
-        <div id="children-section"><br>
-          <p>Enter the details of up to 15 children:</p><br>
-          <!-- Generate 15 Children Fields --><br>
-          <script><br>
-            for (let i = 1; i <= 15; i++) {
-              document.write(`<br>
-                <label for="childName${i}">Child ${i} Name:</label><br>
-                <input type="text" id="childName${i}" name="childName${i}" placeholder="Enter Child Name"><br>
-                <label for="relationship${i}">Relationship:</label><br>
-                <select id="relationship${i}" name="relationship${i}"><br>
-                  <option value="">Select Relationship</option><br>
-                  <option value="Son">Son</option><br>
-                  <option value="Daughter">Daughter</option><br>
-                  <option value="Other">Other</option><br>
-                </select><br>
-              `);
-            }
-          </script>
-        </div>
+        <!-- Child 1 -->
+        <label for="childName1">Child Name 1:</label>
+        <input type="text" id="childName1" name="childName1" placeholder="Enter Child Name">
+        <label for="relationship1">Relationship:</label>
+        <select id="relationship1" name="relationship1">
+          <option value="">Select Relationship</option>
+          <option value="Son">Son</option>
+          <option value="Daughter">Daughter</option>
+          <option value="Other">Other</option>
+        </select>
 
-        <h3>Grandchildren</h3><br>
+        <!-- Child 2 -->
+        <label for="childName2">Child Name 2:</label>
+        <input type="text" id="childName2" name="childName2" placeholder="Enter Child Name">
+        <label for="relationship2">Relationship:</label>
+        <select id="relationship2" name="relationship2">
+          <option value="">Select Relationship</option>
+          <option value="Son">Son</option>
+          <option value="Daughter">Daughter</option>
+          <option value="Other">Other</option>
+        </select>
 
-        <!-- Grandchildren Fields --><br>
-        <div id="grandchildren-section"><br>
-          <p>Enter the details of up to 15 grandchildren:</p><br>
-          <!-- Generate 15 Grandchildren Fields --><br>
-          <script>
-            for (let i = 1; i <= 15; i++) {
-              document.write(`
-                <label for="grandchildName${i}">Grandchild ${i} Name:</label><br>
-                <input type="text" id="grandchildName${i}" name="grandchildName${i}" placeholder="Enter Grandchild Name"><br>
-                <label for="grandchildRelationship${i}">Relationship:</label><br>
-                <select id="grandchildRelationship${i}" name="grandchildRelationship${i}"><br>
-                  <option value="">Select Relationship</option><br>
-                  <option value="Grandson">Grandson</option><br>
-                  <option value="Granddaughter">Granddaughter</option><br>
-                  <option value="Other">Other</option><br>
-                </select><br>
-              `);
-            }
-          </script>
-        </div>
+        <h1>Grandchildren</h1>
+
+        <!-- Grandchild 1 --><br>
+        <label for="grandchildName1">Grandchild Name 1:</label><br>
+        <input type="text" id="grandchildName1" name="grandchildName1" placeholder="Enter Grandchild Name"><br>
+        <label for="grandchildRelationship1">Relationship:</label><br>
+        <select id="grandchildRelationship1" name="grandchildRelationship1"><br>
+          <option value="">Select Relationship</option><br>
+          <option value="Grandson">Grandson</option><br>
+          <option value="Granddaughter">Granddaughter</option><br>
+          <option value="Other">Other</option><br>
+        </select>
+
+        <!-- Grandchild 2 -->
+        <label for="grandchildName2">Grandchild Name 2:</label><br>
+        <input type="text" id="grandchildName2" name="grandchildName2" placeholder="Enter Grandchild Name"><br>
+        <label for="grandchildRelationship2">Relationship:</label><br>
+        <select id="grandchildRelationship2" name="grandchildRelationship2"><br>
+          <option value="">Select Relationship</option><br>
+          <option value="Grandson">Grandson</option><br>
+          <option value="Granddaughter">Granddaughter</option><br>
+          <option value="Other">Other</option><br>
+        </select>
 
         <!-- Submit Button -->
-        <button type="submit">Submit Family Member Details</button><br>
+        <button type="submit">Submit Family Member Details</button>
       </form>
     </div>
   </section>
