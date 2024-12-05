@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to the KAILEL Family Website - Unity, Love, and Prosperity.">
+  <meta name="description" content="Welcome to  KAILEL Family Website - Unity, Love, and Prosperity.">
   <title>KAILEL Family</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -22,49 +22,35 @@
   <section id="about">
     <div class="container">
       <h2>About Us</h2>
-      <p>The KAILEL family has a rich history of unity and support. We believe in the power of love, togetherness, and shared values. From our roots in Embu, Kenya, we have grown stronger with each passing year.</p>
+      <p>The KAILEL family has a rich history of unity and support. We believe in the power of love, togetherness, and shared values. <br>From our roots in Embu, Kenya, we have grown stronger with each passing year.</p>
       <p><strong>Our Motto:</strong> Unity, Love, and Prosperity</p>
       <p><strong>Our Mission:</strong> To uphold family values of respect, support, and love while empowering each member to thrive in all aspects of life.</p>
       <p><strong>Our Vision:</strong> A family united by love, growing together, and creating a legacy of success and harmony for future generations.</p>
     </div>
   </section>
 
-  <!-- Family Members Section -->
+  <!-- Family Members Details Section -->
   <section id="family-members">
     <div class="container">
-      <h2>Meet Our Family</h2>
+      <h2>Family Member Details</h2>
+      <p>Enter the details of each family member, including their children and relationships.</p>
+      <form id="familyForm">
+        <h3>Family Member Details</h3>
 
-      <div class="member">
-        <h3>Kiprotich Amos Kailel</h3>
-        <p><strong>Role:</strong> Father and Head of the Family</p>
-        <p><strong>Function:</strong> As the head of the KAILEL family, Kiprotich Amos Kailel provides leadership, guidance, and inspiration to all family members. He ensures the well-being and growth of the family through wisdom and experience.</p>
-      </div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Enter Full Name">
 
-      <div class="member">
-        <h3>[Mother's Name]</h3>
-        <p><strong>Role:</strong> Mother and Nurturer</p>
-        <p><strong>Function:</strong> [Mother's Name] is the heart of the family, providing emotional support, nurturing relationships, and ensuring the family's home life is peaceful and loving.</p>
-      </div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required placeholder="Enter Phone Number">
 
-      <div class="member">
-        <h3>[Sibling Name]</h3>
-        <p><strong>Role:</strong> [Your Role]</p>
-        <p><strong>Function:</strong> [Short Description of Their Function/Role in the Family]</p>
-      </div>
+        <label for="relationship">Relationship to Head of Family:</label>
+        <input type="text" id="relationship" name="relationship" required placeholder="Enter Relationship">
 
-      <div class="member">
-        <h3>[Another Family Member Name]</h3>
-        <p><strong>Role:</strong> [Their Role]</p>
-        <p><strong>Function:</strong> [Short Description of Their Function/Role in the Family]</p>
-      </div>
-    </div>
-  </section>
+        <label for="children">Children (Name and Relationship):</label>
+        <textarea id="children" name="children" rows="4" placeholder="Enter children's names and their relationships (e.g., John - Son, Mary - Daughter)"></textarea>
 
-  <!-- Family Motto Section -->
-  <section id="motto">
-    <div class="container">
-      <h2>Our Family Motto</h2>
-      <p><strong>Unity, Love, and Prosperity</strong> is the core of everything we do as a family. We believe in supporting one another, growing together, and creating lasting bonds that extend beyond just blood relations.</p>
+        <button type="submit">Submit Family Member Details</button>
+      </form>
     </div>
   </section>
 
@@ -76,22 +62,7 @@
       <div class="images">
         <img src="family-photo1.jpg" alt="Family Photo 1">
         <img src="family-photo2.jpg" alt="Family Photo 2">
-        <!-- Add more family photos here -->
       </div>
-    </div>
-  </section>
-
-  <!-- Family Functions and Roles -->
-  <section id="functions">
-    <div class="container">
-      <h2>Our Family Functions & Roles</h2>
-      <p>Each family member plays an important role in contributing to the family's well-being and success. Below are the key functions and roles of each member:</p>
-      <ul>
-        <li><strong>Father:</strong> The leader, protector, and provider who guides the family with wisdom and strength.</li>
-        <li><strong>Mother:</strong> The nurturer, caretaker, and emotional support for the entire family.</li>
-        <li><strong>Children:</strong> Future leaders of the family, each striving to uphold the values and principles passed down by their elders.</li>
-        <!-- Add other roles and functions if necessary -->
-      </ul>
     </div>
   </section>
 
@@ -103,7 +74,6 @@
       <ul>
         <li><strong>Annual Family Reunion</strong> - Date: [Date], Location: [Location]</li>
         <li><strong>Family Picnic</strong> - Date: [Date], Location: [Location]</li>
-        <!-- Add more events as needed -->
       </ul>
     </div>
   </section>
